@@ -1,6 +1,8 @@
-# Readme
+# Allah
 ## Description 
-it generates a readme file 
+![License](http://img.shields.io/badge/License-MIT-blue.svg "License badge")
+
+Allah
 ## Table of Content
 * [Installation](#installation)
 * [Usage](#usage)
@@ -9,14 +11,18 @@ it generates a readme file
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-not sure what this is
+Allah
 ## Usage
-easy way of constructing a readme
-## license
-havent got one
+Allah
+## License
+    For more information on the License clink on the link below
+![License](https://opensource.org/licenses/MIT)
 ## Contributing
-Strahinja and Lu
+Allah
 ## Tests
-havent done any
+None
 ## Questions
-havent got any
+Follow the Github link here
+https://github.com/sid-666/READMEGenerator
+My Email is here for additional questions
+siddharth.dhananjay@gmail.com
