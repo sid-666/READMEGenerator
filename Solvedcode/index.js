@@ -30,8 +30,14 @@ const questions = [
         name: "contributing"
     },
     {
-        type: "input",
-        message: "License:",
+        type: "checkbox",
+        message: "Select license:",
+        choices: [
+            "Apache",
+            "MIT",
+            "ISC",
+            "GNU GPLv3"
+        ],
         name: "license"
     },
     {
@@ -41,8 +47,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "Questions:",
-        name: "questions"
+        message: "What is your github link?",
+        name: "myLink"
+    },
+    {
+        type: "input",
+        message: "What is your email?",
+        name: "email"
     },
 ];
 function promptuser() {
@@ -51,6 +62,8 @@ function promptuser() {
 function generateReadMe(response) {
     return `# ${response.title}
 ## Description 
+![License](http://img.shields.io/badge/License-${response.license}-blue.svg "License badge")
+
 ${response.description}
 ## Table of Content
 * [Installation](#installation)
@@ -63,14 +76,18 @@ ${response.description}
 ${response.installation}
 ## Usage
 ${response.usage}
-## license
-${response.license}
+## License
+    For more information on the License clink on the link below
+![License](https://opensource.org/licenses/${response.license})
 ## Contributing
 ${response.contributing}
 ## Tests
 ${response.tests}
 ## Questions
-${response.questions}
+Follow the Github link here
+${response.myLink}
+My Email is here for additional questions
+${response.email}
 `
 }
 // function to initialize program
