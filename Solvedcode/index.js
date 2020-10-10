@@ -77,8 +77,8 @@ ${response.installation}
 ## Usage
 ${response.usage}
 ## License
-    For more information on the License clink on the link below
-[License](https://opensource.org/licenses/${response.license})
+    For more information on the License link on the link below
+- [License](https://opensource.org/licenses/${response.license})
 ## Contributing
 ${response.contributing}
 ## Tests
