@@ -38,5 +38,19 @@ const questions = [
 function promptuser() {
     return inquirer.prompt(questions)
 }
+function generateReadMe(response) {
+    return `# ${response.title}
+## Description 
+${response.description}
+## Installation
+${response.installation}
+## Usage
+${response.usage}
+## Credit
+${response.credit}
+## license
+${response}
+`
+}
 
 
