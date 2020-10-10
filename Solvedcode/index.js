@@ -35,4 +35,8 @@ const questions = [
         name: "license"
     },
 ];
+function promptuser() {
+    return inquirer.prompt(questions)
+}
+
 
