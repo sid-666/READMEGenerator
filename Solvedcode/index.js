@@ -26,13 +26,23 @@ const questions = [
     },
     {
         type: "input",
-        message: "Credit:",
-        name: "credit"
+        message: "Contributing:",
+        name: "contributing"
     },
     {
         type: "input",
         message: "License:",
         name: "license"
+    },
+    {
+        type: "input",
+        message: "Tests:",
+        name: "tests"
+    },
+    {
+        type: "input",
+        message: "Questions:",
+        name: "questions"
     },
 ];
 function promptuser() {
@@ -42,15 +52,40 @@ function generateReadMe(response) {
     return `# ${response.title}
 ## Description 
 ${response.description}
+## Table of Content
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 ## Installation
 ${response.installation}
 ## Usage
 ${response.usage}
-## Credit
-${response.credit}
 ## license
-${response}
+${response.license}
+## Contributing
+${response.contributing}
+## Tests
+${response.tests}
+## Questions
+${response.questions}
 `
 }
+// function to initialize program
+function init() {
+    promptuser()
+        .then(function (answer) {
+            const readme = generateReadMe(answer)
+            return writetofileAsync("README.md", readme)
+        })
+        .catch(function (err) {
+            console.log(err)
+        })
+}
+
+// function call to initialize program
+init();
 
 
