@@ -1,8 +1,8 @@
-# wassup
+# Readme
 ## Description 
-![License](http://img.shields.io/badge/License-ISC-blue.svg "License badge")
+![License](http://img.shields.io/badge/License-MIT-blue.svg "License badge")
 
-h
+app that generates a readme doc
 ## Table of Content
 * [Installation](#installation)
 * [Usage](#usage)
@@ -11,16 +11,16 @@ h
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-l
+there is no complex installation method
 ## Usage
-m
+easy for user to generate readme
 ## License
     For more information on the License link on the link below
-- [License](https://opensource.org/licenses/ISC)
+- [License](https://opensource.org/licenses/MIT)
 ## Contributing
-m
+No one else other than me
 ## Tests
-m
+have not done any
 ## Questions
 Follow the Github link here
 https://github.com/sid-666/READMEGenerator
